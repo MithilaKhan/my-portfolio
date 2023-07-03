@@ -1,6 +1,5 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
-import { Link } from 'react-router-dom';
 /* eslint-disable react/no-unescaped-entities */
 const Home = () => {
     return (
@@ -18,10 +17,10 @@ const Home = () => {
             <p className="py-6 text-justify text-2xl">I am a full-stack developer. I focus on creating user-friendly websites. I am a very hardworking person. I enjoy learning new things. I easily motivate myself when facing difficult situations.</p>
             <div className='flex'>
             
-            <Link className=''><FaFacebook className='text-3xl'/></Link> 
-            <Link className='ms-4'><FaLinkedinIn className='text-3xl'/></Link> 
-            <Link className='ms-4'><FaGithub className='text-3xl'/></Link> 
-            <Link className='ms-4'><FaInstagram className='text-3xl'/></Link> 
+            <a href='https://www.facebook.com/tasmia.nur.1800' className=''><FaFacebook className='text-3xl'/></a> 
+            <a href='https://www.linkedin.com/in/mithila-khan-990736278/' className='ms-4'><FaLinkedinIn className='text-3xl'/></a> 
+            <a href='https://github.com/MithilaKhan' className='ms-4'><FaGithub className='text-3xl'/></a> 
+            <a href='' className='ms-4'><FaInstagram className='text-3xl'/></a> 
 
             </div>
          

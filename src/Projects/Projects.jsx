@@ -1,14 +1,19 @@
 import {   FaGithub} from "react-icons/fa";
 import "./Projects.css"
 import { BiSolidRightTopArrowCircle } from "react-icons/bi";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({duration:500, easing: 'ease'})
+    },[])
     return (
         <div id="projects">
-          <h1 className="text-center font-bold text-4xl mt-16 text-red-500 p-7 mb-8 ">My Projects</h1>
+          <h1 data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="text-center font-bold text-4xl mt-16 text-red-500 p-7 mb-8 ">My Projects</h1>
            <div className='w-full md:w-8/12 mx-auto mt-10 md:mt-20'>
             {/* tastyfood  */}
-                <div className='md:flex items-center gap-20 text-white'>
+                <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500" className='md:flex items-center gap-20 text-white'>
                     <div className='w-full md:w-1/2 mx-auto' >
                         <div className='project-site mx-auto'>
                         </div>
@@ -36,7 +41,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className=' flex-row-reverse sm:flex  items-center gap-10 md:gap-20 mt-20 text-white'>
+                <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500" className=' flex-row-reverse sm:flex  items-center gap-10 md:gap-20 mt-20 text-white'>
                     <div className='w-full md:w-1/2 mx-auto' >
                         <div className='project-site2 mx-auto'>
                         </div>
@@ -63,7 +68,8 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:flex items-center lg:mt-10 gap-20 text-white'>
+
+                <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500" className='md:flex items-center lg:mt-10 gap-20 text-white'>
                     <div className='w-full md:w-1/2 mx-auto' >
                         <div className='project-site3 mx-auto'>
                         </div>

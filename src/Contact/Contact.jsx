@@ -1,8 +1,9 @@
 import { FaArrowRight, FaPhone } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { TiLocation } from "react-icons/ti";
-import  { useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Aos from "aos";
 
 const Contact = () => {
   const form = useRef();
@@ -17,19 +18,25 @@ const Contact = () => {
           console.log(error.text);
       });
   };
+
+  useEffect(() => {
+    Aos.init({duration:500, easing: 'ease'})
+},[])
     return (
         <div id="contact">
-            <h1 className="text-center font-bold text-4xl  text-red-500 p-7 mt-10 ">Contact Me</h1>
+            <h1  data-aos="zoom-in" data-aos-duration="1000"
+    data-aos-easing="ease-in-out" className="text-center font-bold text-4xl  text-red-500 p-7 mt-10 ">Contact Me</h1>
             <div className="grid lg:grid-cols-3 justify-items-center sm:grid-cols-1 mb-8 mt-5">
-        <div className="  rounded-lg p-5 text-pink-700  place-items-center"><FaPhone className="text-5xl mx-auto" /> <span className=" text-2xl p-5">+8801812038369 </span></div>
+        <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="  rounded-lg p-5 text-pink-700  place-items-center"><FaPhone className="text-5xl mx-auto" /> <span className=" text-2xl p-5">+8801812038369 </span></div>
 
-<div className="  rounded-lg p-5 text-pink-700  place-items-center"><BiLogoGmail className="text-5xl mx-auto" /> <span className=" text-2xl p-5">mithilakhan082@gmail.com </span></div>
+<div data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="  rounded-lg p-5 text-pink-700  place-items-center"><BiLogoGmail className="text-5xl mx-auto" /> <span className=" text-2xl p-5">mithilakhan082@gmail.com </span></div>
 
-<div className="  rounded-lg p-5 text-pink-700  place-items-center"><TiLocation className="text-5xl mx-auto" /> <span className=" text-2xl p-5">Dhaka , Bangladesh</span></div>
+<div data-aos="flip-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="  rounded-lg p-5 text-pink-700  place-items-center"><TiLocation className="text-5xl mx-auto" /> <span className=" text-2xl p-5">Dhaka , Bangladesh</span></div>
         </div>
 
 
-<form ref={form} onSubmit={sendEmail} >
+<form  data-aos="zoom-in" data-aos-duration="1000"
+    data-aos-easing="ease-in-out" ref={form} onSubmit={sendEmail} >
             <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 lg:ps-14 text-white ">
             <div className="form-control">
           <label className="label">

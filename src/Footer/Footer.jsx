@@ -4,17 +4,12 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer className="footer footer-center p-10   rounded top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30  text-white border-b">
-  <div className="grid grid-flow-col gap-4 text-lg">
-    <a className="link link-hover">About Me</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
-  </div> 
+ 
   <div>
     <div className="grid grid-flow-col gap-4">
-      <a><FaFacebook className="text-4xl"/></a> 
-      <a><FaLinkedin className="text-4xl"/></a> 
-      <a><FaGithub className="text-4xl"/></a>
+      <a href="https://www.facebook.com/tasmia.nur.1800"><FaFacebook className="text-4xl"/></a> 
+      <a href="https://www.linkedin.com/in/mithila-khan-990736278/"><FaLinkedin className="text-4xl"/></a> 
+      <a href="https://github.com/MithilaKhan"><FaGithub className="text-4xl"/></a>
       <a href=""> <FaInstagram className="text-4xl"/></a>
     </div>
   </div> 
